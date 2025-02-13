@@ -1,0 +1,238 @@
+body{
+    background-image: url();
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+}
+/*style for game class inside main tag*/
+.game{    
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+} 
+
+/*a contant style for all 6 image seting*/
+ .contant{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 600px;
+    padding-bottom: 150px;
+    padding-left: 200px;
+}
+
+/**this all 6 same name class for set image position*/
+.bothImg1{
+    margin-left:10%;
+    position: relative;
+    width: 20%;
+}
+#dirt1 {
+    position: absolute;
+    margin-top:20% ;
+    width: 100%;
+}
+#mole1{
+    position: absolute;
+    width: 127px;
+    left: 25%;
+}
+
+
+.bothImg2{
+    margin-left:10%;
+    position: relative;
+    width: 20%;
+}
+#dirt2 {
+    position: absolute;
+    margin-top:20% ;
+    width: 100%;
+}
+#mole2{
+    position: absolute;
+    width: 127px;
+    left: 25%;
+}
+
+
+.bothImg3{
+    margin-left:10%;
+    position: relative;
+    width: 20%;
+}
+#dirt3 {
+    position: absolute;
+    margin-top:20% ;
+    width: 100%;
+}
+#mole3{
+    position: absolute;
+    width: 127px;
+    left: 25%;
+}
+
+
+.bothImg4{
+    margin-left:10%;
+    position: relative;
+    width: 20%;
+}
+#dirt4 {
+    position: absolute;
+    margin-top:20% ;
+    width: 100%;
+}
+#mole4{
+    position: absolute;
+    width: 127px;
+    left: 25%;
+}
+
+
+.bothImg5{
+    margin-left:10%;
+    position: relative;
+    width: 20%;
+}
+#dirt5 {
+    position: absolute;
+    margin-top:20% ;
+    width: 100%;
+}
+#mole5{
+    position: absolute;
+    width: 127px;
+    left: 25%;
+}
+
+
+.bothImg6{
+    margin-left:10%;
+    position: relative;
+    width: 20%;
+}
+#dirt6 {
+    position: absolute;
+    margin-top:20% ;
+    width: 100%;
+}
+#mole6{
+    position: absolute;
+    width: 127px;
+    left: 25%;
+}
+.bothImg7{
+    margin-left:10%;
+    position: relative;
+    width: 20%;
+}
+#dirt7 {
+    position: absolute;
+    margin-top:20% ;
+    width: 100%;
+}
+#mole7{
+    position: absolute;
+    width: 127px;
+    left: 25%;
+}
+
+
+.bothImg8{
+    margin-left:10%;
+    position: relative;
+    width: 20%;
+}
+#dirt8 {
+    position: absolute;
+    margin-top:20% ;
+    width: 100%;
+}
+#mole8{
+    position: absolute;
+    width: 127px;
+    left: 25%;
+}
+
+
+.bothImg9{
+    margin-left:10%;
+    position: relative;
+    width: 20%;
+}
+#dirt9 {
+    position: absolute;
+    margin-top:20% ;
+    width: 100%;
+}
+#mole9{
+    position: absolute;
+    width: 127px;
+    left: 25%;
+}
+
+
+
+/*for style on the message box*/
+.for-massage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 60px;
+}
+.game-win{
+    text-align: center;
+    color: white;
+    background-color: black;
+    border-radius: 2rem;
+    margin: 1%;
+    padding: 1%;
+}
+
+/*for set style on the score bord*/
+.score-menu{
+    display: flex;
+    justify-content: center;
+    padding-right: 60px;
+}
+.score{
+    text-align: center;
+    color: white;
+    font-size: 140%;
+    background-color: black;
+    border-radius: 2rem;
+    padding: 1%;
+}
+
+
+/*for set style on the start menu*/
+.start-menu{
+
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-right: 60px;
+}
+.start{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: lightwhite;
+    font-size: 50px;
+    background-color: #99582a;
+    border-radius: 1rem;
+    margin: 2%;
+    width: 11%;
+    height: 100PX;
+    cursor: pointer;
+}
+.start:hover{
+    width: 12%;
+    cursor: pointer;
+}
