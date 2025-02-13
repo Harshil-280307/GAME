@@ -189,6 +189,41 @@ body{
     padding: 1%;
 }
 
+/*for deficulty menu*/
+
+.deficulty-menu{
+    display: flex;
+    justify-content: center;
+}
+
+#normal{
+    background-color: blue;
+    color: black;
+    margin-left: 2%;
+    width: 5%;
+    height: 60px;
+    border-radius: 1rem;
+    font-size: 150%
+}
+#easy{
+    background-color: green;
+    color: black;
+    border-radius: 1rem;
+    width: 5%;
+    height: 60px;
+    font-size: 150%
+}
+#hard{
+    background-color: red;
+    color: black;
+    border-radius: 1rem;
+    margin-left: 2%;
+    width: 5%;
+    height: 60px;
+    font-size: 150%
+}
+
+
 /*for set style on the score bord*/
 .score-menu{
     display: flex;
@@ -197,7 +232,7 @@ body{
 .score{
     text-align: center;
     color: white;
-    font-size: 140%;
+    font-size: 180%;
     background-color: black;
     border-radius: 2rem;
     padding: 1%;
@@ -206,22 +241,29 @@ body{
 
 /*for set style on the start menu*/
 .start-menu{
-
+    position: relative;
     display: flex;
     justify-content: center;
 }
 .start{
     text-align: center;
+    position: absolute;
     color: red;
     background-color: green;
     border-radius: 2rem;
-    margin: 2%;
     font-size: 60px;
-    width: 11%;
+    padding: 1.5%;
+    height: fit-content;
     cursor: pointer;
 }
-.start:hover{
-    width: 12%;
-    height: 80px;
+
+.Restart{
+    text-align: center;
+    position: absolute;
+    color: red;
+    background-color: green;
+    border-radius: 2rem;
+    font-size: 60px;
+    padding: 1.5%;
     cursor: pointer;
 }

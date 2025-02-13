@@ -1,6 +1,10 @@
 
 //get element for score bord and start menu;
+let easy = document.getElementById("easy")
+let normal = document.getElementById("normal")
+let hard = document.getElementById("hard")
 let start = document.querySelector(".start");
+let Restart = document.querySelector(".Restart");
 let score = document.querySelector(".score");
 
 //get element for massege
@@ -25,11 +29,42 @@ let random;
 let moleVisible;
 let count = 0;
 let gameInterval;
+let speed;
 
-//add start function for start the game;
+Restart.style.visibility = 'hidden'
+start.style.visibility = 'hidden';
+
+// start with easy mode
+easy.addEventListener("click", () => {
+    startWith();
+    hidebtn();
+    speed = 1200;
+})
+
+// start with normal mode
+normal.addEventListener("click" , () => {
+    startWith();
+    hidebtn();
+    speed = 850;
+})
+
+// start with hard mode
+hard.addEventListener("click", () => {
+    startWith();
+    hidebtn();
+    speed = 500;
+})
+
+
+//function for strat the main game
+let startWith = () => {
+start.style.visibility = 'visible';
+
+    //add start function for start the game;
 start.addEventListener("click", () => {
     count = 0;
-    start.innerText = "Restart"
+    start.style.visibility = 'hidden'
+    Restart.style.visibility = 'visible';
     score.innerText = `score : ${count}`;
 
 // Hide all moles initially;
@@ -49,10 +84,22 @@ gameInterval = setInterval(() => {
 
     // Show the selected mole;
     moleVisible.style.visibility = 'visible'; 
-}, 850);
+
+}, speed);
 
 })
 
+}
+
+
+//for Restart btn function
+
+Restart.addEventListener("click", () => {
+    clearInterval(gameInterval);
+    Restart.style.visibility = 'hidden';
+    showbtn();
+    moles.forEach(mole => mole.style.visibility = 'hidden');
+})
 
 //for all mole add click event and incres score by using the countPluse function; 
 
@@ -73,4 +120,18 @@ let countPlus = () =>{
         clearInterval(gameInterval);
     }
     score.innerText = `score : ${count}`;
+}
+
+//function for hidding the deficulty btn
+let hidebtn = () => {
+    easy.style.visibility = 'hidden';
+    normal.style.visibility = 'hidden';
+    hard.style.visibility = 'hidden';
+}
+
+//for get visivle uper btn
+let showbtn = () => {
+    easy.style.visibility = 'visible';
+    normal.style.visibility = 'visible';
+    hard.style.visibility = 'visible';
 }
